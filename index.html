@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" type="image/png" href="notes.png" />
+  <link rel="stylesheet" href="style.css">
+  <title>Sticky Notes</title>
+</head>
+<body>
+
+  <div id="container-text">
+    <div id="inner_textdiv">
+      <textarea placeholder="Note..." id="user_input" maxlength="160"></textarea>
+      <i class="fa fa-check" aria-hidden="true" onclick="createnote()"></i>
+    </div>
+  </div>
+  
+  <main>
+
+    <header>
+      <div class="container">
+        <div id="header">
+          <h1> Sticky Notes</h1>
+          <button id="add_note" onclick="typetext()">Add Note</button>
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <div class="container2">
+        <div id="all_notes"></div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
